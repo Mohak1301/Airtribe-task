@@ -22,6 +22,10 @@ app.use("/api/v1/auth", authRoutes); // Authentication routes
 app.use("/api/v1/course", courseRoutes); // Course-related routes
 app.use("/api/v1/comment", commentRoutes); // Comment-related routes
 
+app.use("/",(req,res)=>{
+    res.send("<h1>Airtribe Project</h1>")
+})
+
 // Define the port
 const PORT = process.env.PORT;
 
