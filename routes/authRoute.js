@@ -1,17 +1,17 @@
-import  express  from "express";
-import { registerController,loginController } from "../controllers/authController.js";
-//router object
+import express from "express";
+import { registerController, loginController } from "../controllers/authController.js";
+
+// Create a router object
 const router = express.Router();
 
-//routing
+// Define routes
 
-//REGISTER || POST
+// Endpoint for user registration (POST)
 router.post("/register", registerController);
 
-//LOGIN || POST
+// Endpoint for user login (POST)
 router.post("/login", loginController);
 
-//NEWCOURSE || POST
-router.post
 
+// Export the router object
 export default router;
